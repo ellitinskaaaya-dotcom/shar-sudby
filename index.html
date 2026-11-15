@@ -178,7 +178,7 @@ velvet.scale.setScalar(.64);addObj(velvet,{pos:[-1.05,1.3,-.5],rot:[.15,.3,.28],
 
 // хромовое сердце-шарик
 const chrome=new THREE.Mesh(puffyHeart({thick:.3,dome:.34,amp:.05,freq:1.3}),new THREE.MeshStandardMaterial({color:0xdfe6ff,metalness:1,roughness:.1,envMapIntensity:1.05}));
-chrome.scale.setScalar(.52);addObj(chrome,{pos:[1.22,-.5,.35],rot:[-.2,-.45,-.35],spin:[0,.22,0],bob:.08});
+chrome.scale.setScalar(.44);addObj(chrome,{pos:[1.32,-.7,.5],rot:[-.2,-.45,-.35],spin:[0,.22,0],bob:.08});
 
 // глянцевая трубка
 const tubeMat=new THREE.MeshPhysicalMaterial({color:0x7dff3a,roughness:.12,metalness:0,clearcoat:1,clearcoatRoughness:.05,envMapIntensity:1.5,emissive:0x153d00,emissiveIntensity:.6});
@@ -223,8 +223,8 @@ function fur(R,r,rep,root,tip,shells=30){
   }
   return g;
 }
-const furRing=fur(.46,.16,[3.4,1.1],0x5a1280,0xff9ff0,26);
-addObj(furRing,{pos:[-1.28,-.5,-.05],rot:[1.0,.35,.5],spin:[0,0,.18],bob:.06});
+const furRing=fur(.46,.16,[3.4,1.1],0x8a5a00,0xffe66d,26);
+addObj(furRing,{pos:[-1.55,-.4,-.9],rot:[1.0,.35,.5],spin:[0,0,.18],bob:.06});
 
 /* ---------- шар на подставке ---------- */
 const globe=new THREE.Group();scene.add(globe);
